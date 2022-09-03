@@ -1,0 +1,553 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+  box-sizing: border-box;
+}
+
+*::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+textarea::-webkit-scrollbar {
+  width: 0px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+textarea::placeholder,
+input::placeholder{
+    color: var(--primary-text-color);
+    opacity: 0.5;
+}
+
+.mat-input-element{
+  background: transparent;
+  color: var(--primary-text-color);
+}
+
+.card,
+.card-body{
+  background: var(--secondary-background-color);
+  border: 1px solid var(--secondary-border-color);
+  color: var(--primary-text-color);
+}
+
+td,
+
+.card-body,
+.mat-checkbox-layout,
+.mat-step-text-label,
+.mat-step,
+.mat-card{
+  background: var(--secondary-background-color);
+  color: var(--primary-text-color);
+  border: var(--border-color);
+}
+
+
+
+*::-webkit-scrollbar-thumb {
+  background: rgb(0, 163, 95); 
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+:root{
+  --card-gradient: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+  
+}
+
+::ng-deep.mat-select-value-text {
+color: var(--primary-text-color);
+}
+
+mat-dialog-container {
+background: var(--primary-background-color) !important;
+}
+
+.mat-select-value-text {
+color: var(--primary-text-color);
+}
+
+.mat-select-panel{
+background: var(--primary-background-color);
+}
+
+.mat-option-text{
+color: var(--primary-text-color);
+
+}
+
+button.mat-secondary{
+background: var(--button-secundary-bg);
+color: var(--primary-text-color);
+border: solid 1px var(--border-color);
+}
+
+textarea{
+white-space: pre-wrap;  
+background: transparent;
+}
+
+input{  
+background: transparent;
+}
+
+.light{
+--primary-background-color: #f0f2f5;
+--secondary-background-color: #fff;
+--glass-bg: rgba(255, 255, 255, 0.2);
+--glass-bg-lg: rgba(255, 255, 255, 0.67);
+--glass-bg-hover: rgba(255 255 255 / 50%);
+--glass-border: rgba(255, 255, 255, 0.37); 
+--contrast-border: rgb(63, 63, 63);
+--primary-text-color: #113650;
+--secondary-text-color: #373e44;
+--secondary-text-color: #373e44;
+--border-color: #c7c7c7;  
+--error-color: #d93025;
+--error-background: #f7d9d9;
+--accent-color: #009cff;
+--primary-shadow:3px 8px 12px 0 rgba( 31, 38, 135, 0.37 );
+--button-secundary-bg: #f0f2f5;
+--am-color:hsl(206,100%,40%);
+--pm-color:hsl(358,62%,47%);
+--secondary-border-color: black;
+--transparente: rgba(250,250,250,0.01) !important;
+
+--inputformulario: #ffffff1c;
+ --botondesabilitado:#ffffff61;
+}
+
+.dark{
+--primary-background-color: #15202b;
+--secondary-background-color: #192734;
+--glass-bg: rgb(18 46 59 / 25%);
+--glass-bg-lg: rgb(18 46 59 / 67%);
+--glass-bg-hover: rgba(18 46 59 / 50%);
+--glass-border: rgba(18 46 59 /18%); 
+--contrast-border: rgb(204, 204, 204);
+--primary-text-color: #fff;
+--secondary-text-color: #e8f0f7;
+--secondary-text-color: #d4d4d4;
+--border-color: rgb(56, 68, 77);
+--error-color: #d93025;
+--accent-color: #1da1f2;
+--primary-shadow:0 8px 32px 0 rgba(46, 109, 243, 0.37);  
+--button-secundary-bg: #223342;
+--am-color:hsl(206,100%,40%);
+--pm-color:hsl(358,62%,47%);
+--secondary-border-color: white;
+--transparente: rgba(250,250,250,0.01) !important;
+--inputformulario: #ffffff1c;
+--botondesabilitado:#ffffff61;
+
+}
+
+mat-divider{
+  background:var(--border-color);
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+
+.full-width {
+  width: 100%;
+}
+
+.spinner-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-container {
+  display: inline-block;
+  position: relative;
+}
+
+textarea::placeholder,
+input::placeholder{
+  color: var(--primary-text-color);
+  opacity: 0.5;
+}
+
+
+/*** SAID BURGOS - Negro ***/
+
+/* _tamaños_ */
+
+mat-toolbar{
+  font-size: 21px!important;
+  height: 44px !important;
+}
+
+
+.ids-info {
+ padding-top: 10px;;
+}
+
+img.igss-img.ng-star-inserted {
+width: 80px !important;
+padding-top: 12px !important;
+padding-bottom: 12px !important;
+
+}
+
+div.content > img{
+
+// width: 200px !important;
+max-width: 90%
+}
+
+
+div.content > h2{
+
+padding-top: 10px !important;
+font-size: 25px !important;
+
+}
+
+.mat-paginator {
+  background: #fff;
+  padding-right: calc(var(--bs-gutter-x) * 0) !important;
+    padding-left: calc(var(--bs-gutter-x) * .0) !important;
+}
+
+
+.ng-star-inserted > h1 {
+font-size: 30px !important;
+
+}
+
+/*
+Editar ruta de stylos en foto
+
+Proyecto\src\app\components\paciente-info\paciente-info.component.html
+
+Linea 6: <img src="{{currentPaciente.foto}}" style="width: 55px; height: 80px; margin: 0 12px;">
+
+Agregar clase: fotopricipalpersona
+
+
+
+*/
+
+.fotoprincipalpersona {
+
+width: 65px !important; 
+height: 77px !important; 
+margin: 0 12px !important;
+
+}
+
+/* /_tamaños_ */
+
+div.mat-form-field-wrapper {
+margin-bottom: 10px !important;
+
+}
+
+.ng-star-inserted > h1 {
+font-size: 25px !important;
+}
+
+
+/* _colores_ */
+label.mat-checkbox-layout {
+
+background-color: var(--transparente);
+}
+
+
+div.card-link-menu {
+
+box-shadow: 2px 2px 7px 2px var(--glass-bg)!important;
+border: 1px solid var(--border-color) !important;
+}
+
+.mat-form-field-appearance-legacy .mat-form-field-label {
+color:var(--primary-text-color) !important;
+}
+
+
+input.mat-input-element {
+
+background-color: var(--secondary-background-color) !important;
+color: var(--primary-text-color);
+}
+
+.mat-form-field-hide-placeholder .mat-select-placeholder {
+background-color: var(--secondary-background-color) !important;
+color:var(--primary-text-color) !important;
+}
+
+.mat-checkbox-inner-container {
+background-color: var(--secondary-background-color) !important;
+}
+
+div.container.overflow-auto.scrollbar-primary > h2 {
+color:var(--primary-text-color) !important;
+}
+
+div.mat-form-field-infix.ng-tns-c86-1 > input.mat-input-element {
+
+color:var(--primary-text-color) !important;
+height: 24px !important;
+font-size: 18px;
+
+}
+
+div.card-link-menu{
+width: 140px !important;
+
+margin-right: 10px !important;
+
+}
+
+b, h1, h2, h3, h4, h5, h6 {
+color:var(--primary-text-color) !important;
+}
+
+div.route-button.selected {
+font-weight: initial !important;
+}
+
+
+div.ng-star-inserted > h3 {
+color: var(--primary-text-color);
+}
+
+input.mat-input-element {
+background-color: var(--secondary-background-color) !important;
+}
+
+input.mat-input-element::placeholder {
+
+color: var(--secondary-text-color) !important;
+}
+
+h2#mat-dialog-title-0.mat-dialog-title {
+color: var(--primary-text-color);
+}
+
+table.table-striped {
+
+color: var(--primary-text-color);
+border: var(--border-color);
+
+font-weight: none;
+}
+
+
+table {
+border: var(--border-color);
+}
+
+
+div > h6 { 
+
+font-size: 14px !important;
+font-weight: initial !important;
+}
+
+button.mat-primary.mat-button-disabled{
+
+background-color: var(--botondesabilitado) !important;
+color: #000!important;
+}
+
+
+div.mat-paginator-outer-container {
+background-color: var(--secondary-background-color) !important;
+color: var(--primary-text-color) !important;
+}
+
+div.mat-select-arrow { 
+
+color: var(--primary-text-color) !important;
+}
+
+.title-span {
+font-weight: initial !important;
+}
+
+
+.mat-focus-indicator.mat-button.mat-button-base {
+
+background-color: var(--pm-color) !important;
+color: #fff !important;
+}
+
+#comentario_aminoacidos, #comentariodieta, #comentarioReposo, #comentarioSignoE24, #comentarioSignoE25, #comentarioSignoVitalNormal {
+background-color: #fff !important;
+color: #000 !important;
+width: 80% !important;
+
+}
+
+b, strong {
+font-weight: initial !important;
+}
+
+thead,  .mat-tab-labels {
+background-color: var(--primary-background-color) !important;
+color: var(--primary-text-color) !important;
+}
+
+
+table > .mat-table.cdk-table.mat-elevation-z8 > thead {
+background-color: var(--primary-background-color);
+color: var(--primary-text-color);
+}
+
+
+
+.mat-tab-label .mat-tab-label-content, .mat-header-cell {
+
+color: var(--primary-text-color) !important;
+
+}
+
+.mat-form-field-appearance-fill .mat-form-field-flex {
+
+background-color: var(--secondary-background-color) !important;
+
+}
+
+.mat-form-field-appearance-fill::placeholder {
+
+color: #fff!important;
+}
+
+input#historiaInterconsulta, input#examenesComplementarios {
+color: var(--primary-text-color) !important;
+}
+
+th {
+
+font-weight: 500 !important;
+}
+
+td {
+color: var(--primary-text-color) !important;
+border-bottom: 1px solid var(--primary-text-color) !important;
+}
+
+label, div, h1, h2, h3, h4, h5, h6, span.title, h2.textoLabel,span.textoLabel {
+font-weight: initial!important;
+
+}
+
+.ng-star-inserted > h3 {
+color: var(--primary-text-color) !important;
+} 
+
+.sin-datos.ng-star-inserted {
+font-size: 20px !important;
+}
+
+.inputlectura {
+background: #f8f9fae0 !important;
+color: #000;
+}
+
+.nav-link:focus, .nav-link:hover {
+color: var(--primary-text-color) !important;
+}
+
+.mat-icon.notranslate {
+
+
+width: initial !important;
+
+}
+
+img.ng-star-inserted {
+width: 250px !important;
+border-radius: 49% !important;
+
+}
+
+.mat-form-field-appearance-outline .mat-form-field-outline {
+background-color: var(--secondary-background-color) !important;
+}
+
+div.card-body {
+
+background-color: var(--primary-background-color) !important;
+}
+
+.mat-select-placeholder {
+
+color: var(--primary-text-color) !important;
+}
+
+.mat-expansion-panel  {
+margin-top: 15px !important;
+background-color:  #3f51b5  !important;
+
+}
+
+.mat-expansion-panel-header-title, .mat-expansion-panel-header-description {
+
+color: #fff !important;
+}
+
+.mat-expansion-panel-body {
+background-color: var(--secondary-background-color) !important;
+}
+
+.textoLabel {
+color:var(--primary-text-color) !important;
+}
+
+.mat-input-element.mat-form-field-autofill-control.textAreaPlan.cdk-text-field-autofill-monitored {
+color: var(--primary-text-color);
+}
+
+.nav-link {
+color: var(--primary-text-color) !important;
+}
+
+.nav-link.active {
+color: #000 !important;
+}
+
+.nav-pills .nav-link.active {
+color: var(--primary-text-color) !important;
+}
+
+.unverified-signature-warning {
+  background-color: #faff53 !important;
+}
+
+.mat-checkbox-frame { 
+  border-color: var(--primary-text-color);
+}
+
+.mat-radio-outer-circle{
+  border-color: var(--primary-text-color);
+}
+
+.swal2-popup {
+  background:var(--primary-background-color) !important;
+}

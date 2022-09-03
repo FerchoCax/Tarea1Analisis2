@@ -1,0 +1,56 @@
+<mat-toolbar>
+    <div class="toolbar-container">
+
+        <button mat-icon-button (click)="toggleNav()">
+            <mat-icon *ngIf="!smallView && !isExpanded">menu</mat-icon>
+            <mat-icon *ngIf="!smallView && isExpanded">menu_open</mat-icon>
+
+            <mat-icon *ngIf="smallView && !sidenav.opened">menu</mat-icon>
+            <mat-icon *ngIf="smallView && sidenav.opened">menu_open</mat-icon>
+        </button>
+
+
+        <span>Analisis de Sistemas 2</span>
+
+
+        <span *ngIf="!smallView">Usuario: {{user.username}}</span>
+        <span *ngIf="smallView"></span>
+
+    </div>
+</mat-toolbar>
+<mat-sidenav-container autosize class="sidenav-container">
+
+    <mat-sidenav #sidenav mode="side" opened="true">
+        <div class="nav-container" style="width: 100%; display: flex; ">
+            <div>
+                <mat-divider></mat-divider>
+            </div>
+
+            
+            <mat-nav-list>
+                <mat-list-item *ngIf="!isDarkMode" (click)="darkTheme()" style="color: var(--primary-text-color);">
+                    <mat-icon mat-list-icon>dark_mode</mat-icon>
+                    <span *ngIf="isExpanded">Tema</span>
+                </mat-list-item>
+
+                <mat-list-item *ngIf="isDarkMode" (click)="darkTheme()" style="color: var(--primary-text-color);">
+                    <mat-icon mat-list-icon>light_mode</mat-icon>
+                    <span *ngIf="isExpanded">Tema</span>
+                </mat-list-item>
+
+                <mat-list-item (click)="logout()" style="color: var(--primary-text-color);">
+                    <mat-icon mat-list-icon>logout</mat-icon>
+                    <span *ngIf="isExpanded">Salir</span>
+                </mat-list-item>
+            </mat-nav-list>
+
+        </div>
+    </mat-sidenav>
+    <mat-sidenav-content style="margin: 0;" ID="contenedor">
+        <div class="content" *ngIf="ruta()">
+            <!-- <img src="../../../assets/svgs/Home.svg"> -->
+            <h3 style="margin-top: 30px;">Bienvenido {{user.username}}.</h3>
+        </div>
+        <router-outlet (activate)="onActivate($event)"></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>

@@ -1,0 +1,12 @@
+ <ngx-extended-pdf-viewer
+    [base64Src]="url"
+    [useBrowserLocale]="true" 
+    [showHandToolButton]="true"
+    [showPresentationModeButton]="true"
+    [showUnverifiedSignatures]="true"
+    [showOpenFileButton]="false"
+   ></ngx-extended-pdf-viewer>
+
+  <mat-dialog-actions align="end">
+    <button mat-raised-button color="warn" (click)="closeDialog()" [disabled]="cerrar">Cerrar</button>
+  </mat-dialog-actions>
