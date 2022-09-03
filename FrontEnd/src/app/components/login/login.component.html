@@ -1,0 +1,37 @@
+
+<div class="theme">     
+        <div class="card">
+            <div style="padding-top: 15px;">
+                <h4 style="text-align: center;">Login</h4>
+            </div>
+            <div class="card-body ">
+                <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" >
+                    <mat-form-field appearance="outline" class="full-width">
+                        <mat-label style="color: var(--primary-text-color);">Usuario</mat-label>
+                        <input matInput autocomplete="off" formControlName="username" type="text" class="full-width" [ngClass]="{ 'is-invalid': submitted && f.username.errors }">
+                        
+                        <mat-error *ngIf="submitted && f.username.errors">
+                            <div *ngIf="f.username.errors.required">El usario es requerido</div>
+                        </mat-error>
+                    </mat-form-field>
+                    <mat-form-field appearance="outline" class="full-width">
+                        <mat-label style="color: var(--primary-text-color);" >Contraseña</mat-label>
+                        <input matInput formControlName="password" (ngModelChange)="cambiocontrasena(loginForm.value)"   type="password" [type]="hide ? 'password' : 'text'" class="full-width" [ngClass]="{ 'is-invalid': submitted && f.password.errors }">
+                        
+                            <mat-icon matSuffix (click)= "cambio()" *ngIf="!visible">
+                                {{hide ? 'visibility' : 'visibility_off'}}</mat-icon>
+                       
+                        <mat-error *ngIf="submitted && f.password.errors">
+                            <div *ngIf="f.password.errors.required">La contraseña es requerido</div>
+                        </mat-error>
+                    </mat-form-field>
+                    <button mat-raised-button color="primary" type="submit" [disabled]="loading">
+                        <span *ngIf="loading" class="spinner-border spinner-border-sm mr-1"></span>
+                        Ingresar
+                    </button>
+                    <div *ngIf="error" class="alert alert-danger mt-3 mb-0">{{error}}</div>
+                </form>
+            </div>
+        </div>
+
+</div>
